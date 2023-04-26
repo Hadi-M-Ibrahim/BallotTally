@@ -12,7 +12,7 @@ private:
 public:
 	PersonType();										//these are both constructors for the class 
 	PersonType(std::string first, std::string last, int ssn);		// ^^^^^^
-	void setPerfonInfo(std::string first, std::string last, int ssn); //this edits the current details of the class object
+	void setPersonInfo(std::string first, std::string last, int ssn); //this edits the current details of the class object
 	std::string getFirstName() const;  // returns the first name as a string
 	std::string getLastName() const;   // returns the last name as a string
 	int getSSN() const;		    //returns the person's ssn NOTE: This function doesn't need to be formatted 

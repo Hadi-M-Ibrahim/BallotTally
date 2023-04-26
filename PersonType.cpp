@@ -15,21 +15,21 @@ PersonType::PersonType(string fName, string lName,int newSSN) //overloaded const
     ssn = newSSN;
 }
 // these are all the public member function used to change private data and print object data
-void PersonType::setPersonInfo(string fName, string lName,int newSSN)
+void PersonType::setPersonInfo(string first, string last,int newSSN)
 {
-    firstName = fName;
-    lastName = lName;
+    firstName = first;
+    lastName = last;
     ssn = newSSN;
 }
-string PersonType::getFirstName()
+string PersonType::getFirstName() const
 {
     return firstName;
 }
-string PersonType::getLastName()
+string PersonType::getLastName() const
 {
     return lastName;
 }
-int PersonType::getSSN()
+int PersonType::getSSN() const
 {
     return ssn;
 }
