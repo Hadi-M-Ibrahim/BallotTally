@@ -4,6 +4,8 @@
 #include <iostream>
 #include "PersonType.h"
 
+
+/*
 int main()
 {
     int test = 134890045;
@@ -13,4 +15,4 @@ int main()
 
     p1.~PersonType();
 }
-
+*/
