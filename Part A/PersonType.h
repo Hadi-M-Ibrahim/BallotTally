@@ -16,9 +16,9 @@ public:
 	std::string getFirstName() const;  // returns the first name as a string
 	std::string getLastName() const;   // returns the last name as a string
 	int getSSN() const;		    //returns the person's ssn NOTE: This function doesn't need to be formatted 
-	void printName();	    //prints the person's name in this format: "lastname, firstname"
-	void printPersonInfo(); // prints all persontype information in the format: "###-##-#### firstname Lastname"
-	void printSSN();        //prints the ssn in the format: "###-##-####"
+	void printName() const;	    //prints the person's name in this format: "lastname, firstname"
+	void printPersonInfo() const; // prints all persontype information in the format: "###-##-#### firstname Lastname"
+	void printSSN() const;        //prints the ssn in the format: "###-##-####"
 	~PersonType();			//default destructor 
 
 };

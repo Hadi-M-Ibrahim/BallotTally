@@ -33,16 +33,16 @@ int PersonType::getSSN() const
 {
     return ssn;
 }
-void PersonType::printName()
+void PersonType::printName() const
 {
     cout << lastName << ", " << firstName << endl;
 }
-void PersonType::printPersonInfo()
+void PersonType::printPersonInfo() const
 {
     printSSN();
     cout << " " << firstName << " " << lastName;
 }
-void PersonType::printSSN()
+void PersonType::printSSN() const
 {
     string SSN = to_string(ssn);
     for (int i = 0; i < SSN.length(); i++)
