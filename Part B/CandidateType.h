@@ -11,8 +11,8 @@ class CandidateType : public PersonType
     CandidateType();
     void updateVotesByCampus(int, int);
     int getTotalVotes() const;
-    void getVotesByCampus(int) const;
-    void printCandidateInfo();
+    int getVotesByCampus(int) const;
+    void printCandidateInfo() const;
     ~CandidateType();
 
     private:

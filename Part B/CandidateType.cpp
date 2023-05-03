@@ -39,25 +39,21 @@ void CandidateType::updateVotesByCampus(int numOfVotes, int choice)
         break;
     }
 }
-int CandidateType::getTotalVotes(int campusVotes[], int NUM_OF_CAMPUS)
+int CandidateType::getTotalVotes() const
 {
     int totalVotes = 0;
 
-    for(int i = 0; i < NUM_OF_CAMPUS; i++)
+    for(int i = 0; i < NUM_OF_CAMPUSES; i++)
     {
         totalVotes += campusVotes[i];
     }
     return totalVotes;
 }
-void CandidateType::getVotesByCampus(int campusVotes[], int NUM_OF_CAMPUS)
+int CandidateType::getVotesByCampus(int choice) const
 {
-    
-    for (int i = 0; i < NUM_OF_CAMPUS; i++)
-    {
-        cout << "Campus " << (i+1) << " number of votes: " << campusVotes[i] << endl;
-    }
+   return campusVotes[choice - 1];
 }
-void CandidateType::printCandidateInfo()
+void CandidateType::printCandidateInfo() const
 {
     cout << PersonType::printSSN << " - " << PersonType::printName;
 }
