@@ -6,7 +6,7 @@ const int NUM_OF_CAMPUSES = 4;
 
 class CandidateType : public PersonType
 {
-    public:
+public:
     CandidateType();
     void updateVotesByCampus(int, int);
     int getTotalVotes() const;
@@ -14,9 +14,9 @@ class CandidateType : public PersonType
     void printCandidateInfo() const;
     ~CandidateType();
 
-    private:
-    int numOfVotes;
-    int campusVotes[NUM_OF_CAMPUSES];
+private:
+    int numOfVotes = 0;
+    int campusVotes[NUM_OF_CAMPUSES] = { 0 };
 };
 
 
