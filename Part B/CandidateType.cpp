@@ -9,7 +9,7 @@ CandidateType::CandidateType()
     int numOfVotes = 0;
     int campusVotes[NUM_OF_CAMPUSES] = {0};
 }
-void CandidateType::updateVotesByCampus(int campusVotes[], int NUM_OF_CAMPUS, int numOfVotes, int choice)
+void CandidateType::updateVotesByCampus(int numOfVotes, int choice)
 {
     switch(choice)
     {
@@ -51,6 +51,7 @@ int CandidateType::getTotalVotes(int campusVotes[], int NUM_OF_CAMPUS)
 }
 void CandidateType::getVotesByCampus(int campusVotes[], int NUM_OF_CAMPUS)
 {
+    
     for (int i = 0; i < NUM_OF_CAMPUS; i++)
     {
         cout << "Campus " << (i+1) << " number of votes: " << campusVotes[i] << endl;
