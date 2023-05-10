@@ -6,19 +6,19 @@
 
 class PersonType {
 private:
-	std::string firstName;						//string for the first name 
-	std::string lastName;						//string for the last name
-	int ssn = 0;								//integer for the ssn
+	std::string firstName;	// First name stored as string 
+	std::string lastName;	// Last name stored as string 
+	int ssn = 0;			// Social security number (abbreviated as "ssn") stored as an integer 
 public:
-	PersonType();										//these are both constructors for the class 
-	PersonType(std::string first, std::string last, int ssn);		// ^^^^^^
-	void setPersonInfo(std::string first, std::string last, int ssn); //this edits the current details of the class object
-	std::string getFirstName() const;  // returns the first name as a string
-	std::string getLastName() const;   // returns the last name as a string
-	int getSSN() const;		    //returns the person's ssn NOTE: This function doesn't need to be formatted 
-	void printName() const;	    //prints the person's name in this format: "lastname, firstname"
-	void printPersonInfo() const; // prints all persontype information in the format: "###-##-#### firstname Lastname"
-	void printSSN() const;        //prints the ssn in the format: "###-##-####"
+	PersonType();	// Default constructor (used when user provides no data)
+	PersonType(std::string first, std::string last, int ssn);	// Overload constructor (used when user provides  data)
+	void setPersonInfo(std::string first, std::string last, int ssn);	// Allows for the editing of the current details of the private member data
+	std::string getFirstName() const;  // Returns the first name as a string
+	std::string getLastName() const;   // Returns the last name as a string
+	int getSSN() const;	// Returns the ssn as an integer NOTE: This function does not need to be formatted 
+	void printName() const;	// Prints the person's name in the following format: "lastname, firstname"
+	void printPersonInfo() const; // Prints all persontype information in the following format: "###-##-#### firstname Lastname"
+	void printSSN() const;	// Prints the ssn in the following format: "###-##-####"
 	~PersonType();			//default destructor 
 
 };
