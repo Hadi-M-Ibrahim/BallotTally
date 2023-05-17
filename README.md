@@ -1,6 +1,7 @@
 # CompSci121_FinalProject_PartA
 
-Style note: prof said always place the import for custom header files last. ie. 
+Style note: prof said always place the import for custom header files last. 
+
 #include <iostream>
 #include "Lab 9.h"
 
