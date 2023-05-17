@@ -1,6 +1,6 @@
 # CompSci121_FinalProject_PartA
 
-Style note: prof said always place the import for custom header files last. 
+Style note: prof said always place the import for custom header files last. ie.
 
 #include \<iostream\>
 
