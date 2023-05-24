@@ -12,6 +12,8 @@ public:
     int getTotalVotes() const;
     int getVotesByCampus(int choice) const;
     void printCandidateInfo() const;
+    void printCandidateTotalVotes() const;
+    void printCandidateDivisionVotes(int division) const;
     ~CandidateType();
 
 private:

@@ -57,6 +57,18 @@ void CandidateType::printCandidateInfo() const
     cout << " - "; 
     PersonType::printName();
 }
+void CandidateType::printCandidateTotalVotes() const {
+    PersonType::printName();
+    cout << endl << "Total Votes (all campuses): " << numOfVotes;
+}
+void CandidateType::printCandidateDivisionVotes(int division) const {
+    if (division < NUM_OF_CAMPUSES) {
+        PersonType::printName();
+        cout << endl << "Campus " << division << " total votes:" << campusVotes[division];
+    }
+    else
+        cout << "Not a valid division for this election." << endl;
+}
 CandidateType::~CandidateType()
 {
 
