@@ -9,7 +9,7 @@ CandidateType::CandidateType()
     int numOfVotes = 0;
     int campusVotes[NUM_OF_CAMPUSES] = { 0 };
 }
-void CandidateType::updateVotesByCampus(int numOfVotes, int choice)
+void CandidateType::updateVotesByCampus(int choice, int numOfVotes) //updates the total number of votes for a campus
 {
     switch (choice)
     {
@@ -41,13 +41,13 @@ void CandidateType::updateVotesByCampus(int numOfVotes, int choice)
 }
 int CandidateType::getTotalVotes() const
 {
-    int totalVotes = 0;
-
+    int tracking = 0;
     for (int i = 0; i < NUM_OF_CAMPUSES; i++)
     {
-        totalVotes += campusVotes[i];
+        tracking += campusVotes[i];
     }
-    return totalVotes;
+    numOfVotes = tracking;
+    return numOfVotes;
 }
 int CandidateType::getVotesByCampus(int choice) const
 {
