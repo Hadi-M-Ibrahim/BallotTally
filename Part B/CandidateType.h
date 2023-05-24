@@ -8,9 +8,9 @@ class CandidateType : public PersonType
 {
 public:
     CandidateType();
-    void updateVotesByCampus(int, int);
+    void updateVotesByCampus(int numOfVotes, int choice);
     int getTotalVotes() const;
-    int getVotesByCampus(int) const;
+    int getVotesByCampus(int choice) const;
     void printCandidateInfo() const;
     ~CandidateType();
 
