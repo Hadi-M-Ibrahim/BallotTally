@@ -1,12 +1,12 @@
 #pragma once
-ifndef INPUTHANDLER_H 
-define INPUTHANDLER_H 
+#ifndef INPUTHANDLER_H 
+#define INPUTHANDLER_H 
 
 #include <fstream>
 #include <string>
 #include "CandidateList.h"
 
-void createCandidateList(ifstream& infile, CandidateList& candidateList)
+void createCandidateList(std::fstream& infile, CandidateList& candidateList)
 {
 	int ssn = 0;
 	int allVotes[NUM_OF_CAMPUSES];
@@ -39,3 +39,6 @@ void readCandidateData(CandidateList& candidateList)
 	createCandidateList(infile, candidateList);
 	infile.close();
 }
+
+#endif
+
