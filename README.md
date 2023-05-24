@@ -1,8 +1,8 @@
 
 # To do: 
 
-place Candidate_data.txt in its own resource folder 
-
+1) Place Candidate_data.txt in its own resource folder 
+2) Figure out a consitant default nampsace (Do we use "using namespace std;" or not)
 # Important Notes
 Prof said always place the import for custom header files last. ie.
 
