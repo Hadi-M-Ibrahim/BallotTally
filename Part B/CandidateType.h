@@ -8,14 +8,14 @@ class CandidateType : public PersonType
 {
 public:
     CandidateType();
-    void updateVotesByCampus(int numOfVotes, int choice);
+    void updateVotesByCampus(int choice, int votes);
     int getTotalVotes() const;
     int getVotesByCampus(int choice) const;
     void printCandidateInfo() const;
     ~CandidateType();
 
 private:
-    int numOfVotes = 0;
+    int numOfVotes;
     int campusVotes[NUM_OF_CAMPUSES] = { 0 };
 };
 
