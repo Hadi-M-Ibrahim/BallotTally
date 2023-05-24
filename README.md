@@ -1,6 +1,7 @@
 # CompSci121_FinalProject_PartA
 
-To do: 
+# To do: 
+
 place Candidate_data.txt in its own resource folder 
 
 Style note: prof said always place the import for custom header files last. ie.
