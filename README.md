@@ -8,7 +8,7 @@
 5) ~~Fix code to comply with important notes (see below)~~
 6) Make a UML for Part C 
 8) Complete the google slides
-9) ~~Fix issue with #including files in nested folders ~~
+9) ~~Fix issue with #including files in nested folders~~
 10) ~~Add const modifier for parameters in Part c ("CandidateList.cpp") when/if needed~~
 
 # Important Notes
