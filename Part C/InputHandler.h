@@ -30,7 +30,7 @@ void createCandidateList(std::ifstream& infile, CandidateList& candidateList)
 void readCandidateData(CandidateList& candidateList)
 {
 	std::ifstream infile;
-	infile.open("candidate_data.txt");
+	infile.open("Candidate_data.txt");
 	if (!infile)
 	{
 		std::cout << "Input file does not exist." << std::endl;
