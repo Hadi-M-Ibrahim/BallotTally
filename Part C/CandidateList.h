@@ -4,7 +4,7 @@
 #include "Node.h"
 #include "CandidateType.h"
 
-class CandidateList : public CandidateType {
+class CandidateList {
     private:
         Node* first;
         Node* last; 
@@ -12,19 +12,15 @@ class CandidateList : public CandidateType {
 
     public:
         CandidateList();
-        void addCandidate(CandidateType NewCandiate); 
+        void addCandidate(const CandidateType& NewCandiate); 
         int getWinner() const;
-        bool searchCandidate(int CandidateSSN) const; 
-        void printCandidteName(int CandidateSSN) const; 
+        bool searchCandidate(const int CandidateSSN) const; 
+        void printCandidteName(const int CandidateSSN) const; 
         void printAllCandidates() const; 
-        void printCandidateCampusVotes(int CandidateSSN,int division) const; 
-        void printCandidateTotalVotes() const; 
-        void printCandidateDivisionVotes () const; 
+        void printCandidateCampusVotes(const int CandidateSSN, const int division) const; 
+        void printCandidateTotalVotes(const int SSN) const; 
+        void destroyList();
         ~CandidateList();
-
-
-
-
 
 };
 

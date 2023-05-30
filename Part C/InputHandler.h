@@ -6,11 +6,11 @@
 #include <string>
 #include "CandidateList.h"
 
-void createCandidateList(std::fstream& infile, CandidateList& candidateList)
+void createCandidateList(std::ifstream& infile, CandidateList& candidateList)
 {
 	int ssn = 0;
 	int allVotes[NUM_OF_CAMPUSES];
-	string fName, lName;
+	std::string fName, lName;
 	infile >> ssn;
 	while (ssn != -999)
 	{
@@ -29,11 +29,11 @@ void createCandidateList(std::fstream& infile, CandidateList& candidateList)
 }
 void readCandidateData(CandidateList& candidateList)
 {
-	ifstream infile;
+	std::ifstream infile;
 	infile.open("candidate_data.txt");
 	if (!infile)
 	{
-		cerr << "Input file does not exist." << endl;
+		std::cout << "Input file does not exist." << std::endl;
 		exit(1);
 	}
 	createCandidateList(infile, candidateList);
@@ -41,4 +41,5 @@ void readCandidateData(CandidateList& candidateList)
 }
 
 #endif
+
 
