@@ -8,7 +8,7 @@ class CandidateList {
     private:
         Node* first;
         Node* last; 
-        static int count; 
+        int count; 
 
     public:
         CandidateList();

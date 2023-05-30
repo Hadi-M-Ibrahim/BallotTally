@@ -7,9 +7,9 @@ using namespace std;
 
 CandidateList::CandidateList()
 {
-    Node* first = nullptr;
-    Node* last = nullptr;
-    static int count = 0;
+   	first = nullptr;
+    last = nullptr;
+	int count = 0;
 }
 
 void CandidateList :: addCandidate(const CandidateType& NewCandiate)
@@ -75,6 +75,7 @@ bool CandidateList::searchCandidate(const int SSN) const {
 				
 		}
 	}
+	return false;
 }
 
 void CandidateList::printCandidteName(const int SSN) const{
