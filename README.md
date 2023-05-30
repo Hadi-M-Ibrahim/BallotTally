@@ -3,8 +3,12 @@
 
 1) Place Candidate_data.txt in its own resource folder 
 2) Figure out a consitant default nampsace (Do we use "using namespace std;" or not)
-3) Fix Menu Option 3 "3: Print a candidate's total votes" as it is printing the candidates name twice instead of once
-4) ~~Add const modifier for parameters in Part c ("CandidateList.cpp") when/if needed~~
+3) Fix menu option 3 "3: Print a candidate's total votes" as it is printing the candidates name twice instead of once
+4) Ask prof about option 5 "5: Print final results" it only prints the names and ssns but not also total votes wich it needs to do. Ask wether we should change the driver to somehow print each candiates votes, change part c's "printAllCandidates()" to also call printCandidateTotalVotes() along with printCandidateInfo() (wich it currently calls) to print out the total votes by defualt, or change part b's printCandidateInfo() to include the votes for each candiate as part of the info by defualt.
+5) Fix code to comply with important notes (see below) 
+6) Complete the google slides
+7) ~~Add const modifier for parameters in Part c ("CandidateList.cpp") when/if needed~~
+
 # Important Notes
 Prof said always place the import for custom header files last. ie.
 
