@@ -10,6 +10,7 @@
 8) Complete the google slides
 9) ~~Fix issue with #including files in nested folders~~
 10) ~~Add const modifier for parameters in Part c ("CandidateList.cpp") when/if needed~~
+11) BEFORE TURNING IN: replace #include realtive path refrences with normal refrences ie. change #include "Part C/InputHandler.h" to #include "InputHandler.h"  DO THIS FOR ALL #includes with realtive path refrences | dont forget the refrence on line 33 of InputHandler.h | If not 100% sure what to do just ask Hadi to do it plz 
 
 # Important Notes
 Prof said always place the import for custom header files last. ie.
