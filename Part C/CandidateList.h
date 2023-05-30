@@ -2,7 +2,7 @@
 #define CandidateList_H
 
 #include "Node.h"
-#include "CandidateType.h"
+#include "../Part A/PersonType.h"
 
 class CandidateList {
     private:

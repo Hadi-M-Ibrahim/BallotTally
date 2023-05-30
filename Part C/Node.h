@@ -1,6 +1,6 @@
 #ifndef Node_H
 #define Node_H
-#include "CandidateType.h"
+#include "../Part B/CandidateType.cpp"
 class Node
 {
 public:

@@ -1,6 +1,6 @@
 #ifndef CANDIDATETYPE_H
 #define CANDIDATETYPE_H
-#include "PersonType.h"
+#include "../Part A/PersonType.h"
 
 const int NUM_OF_CAMPUSES = 4;
 

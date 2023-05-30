@@ -8,7 +8,7 @@ Final Project
 Collaboration:
 */
 
-#include "InputHandler.h"
+#include "Part C/InputHandler.h"
 using namespace std;
 void displayMenu();
 void processChoice(CandidateList& candidateList);
