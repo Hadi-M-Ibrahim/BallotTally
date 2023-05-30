@@ -1,6 +1,7 @@
-#include "CandidateList.h"
 #include <iostream>
 #include <string>
+#include "CandidateList.h"
+
 
 
 using namespace std;

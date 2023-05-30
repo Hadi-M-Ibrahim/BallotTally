@@ -1,6 +1,6 @@
-#include "CandidateType.h"
 #include <iostream>
 #include <string>
+#include "CandidateType.h"
 
 using namespace std;
 

@@ -1,5 +1,11 @@
 /*
-NAME HEADER
+Eric Lehman, Eric Alvarado, Hadi Ibrahim
+CMPR 121 - Spring 2023
+MAY/30/2023
+
+Final Project
+
+Collaboration:
 */
 
 #include "InputHandler.h"

@@ -1,5 +1,5 @@
-#include "PersonType.h"
 #include <iostream>
+#include "PersonType.h"
 using namespace std;
 
 PersonType::PersonType() //default constructor
