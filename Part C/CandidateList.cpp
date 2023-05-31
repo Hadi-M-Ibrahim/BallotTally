@@ -10,7 +10,7 @@ CandidateList::CandidateList()
 {
    	first = nullptr;
     last = nullptr;
-	int count = 0;
+    int count = 0;
 }
 
 void CandidateList :: addCandidate(const CandidateType& NewCandiate)

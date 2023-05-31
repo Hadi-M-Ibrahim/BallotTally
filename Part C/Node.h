@@ -17,6 +17,4 @@ private:
 	Node* link; //pointer that points to next node
 };
 
-
-
 #endif
